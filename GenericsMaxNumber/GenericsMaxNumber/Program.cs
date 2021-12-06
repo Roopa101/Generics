@@ -11,6 +11,7 @@ namespace GenericsMaxNumber
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Generics");
+            MaximumNumber.MaxNum();
             Console.ReadLine();
         }
     }
