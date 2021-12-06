@@ -32,16 +32,16 @@ namespace GenericsMaxNumber
         {
             Console.Write("Enter how many numbers you want to comapare : ");
             int size = int.Parse(Console.ReadLine());
-            int[] array = new int[size];
+            float[] array= new float[size];
             int count = 1;
             for (int i = 0; i < size; i++)
             {
                 Console.Write("Enter {0} number : ", count);
-                array[i] = int.Parse(Console.ReadLine());
+                array[i] = float.Parse(Console.ReadLine());
                 count++;
             }
             Array.Sort(array);
-            int max = array[size - 1];
+            float max = array[size - 1];
             return max;
         }
         public static void MaxNumFloat()
