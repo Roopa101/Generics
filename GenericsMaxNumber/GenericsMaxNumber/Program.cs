@@ -7,11 +7,27 @@ using System.Threading.Tasks;
 namespace GenericsMaxNumber
 {
     class Program
-    {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Welcome to Generics");
-            MaximumNumber.MaxNum();
+    { 
+        public static void Main(string[] args)
+        { 
+            Console.WriteLine("\nWelcome to Find Maximum number using Generics");
+          
+            Console.WriteLine("1:Maximum in Integer   2:Maximum in Float");
+           
+            Console.Write("Enter your choice : ");
+            int choice = int.Parse(Console.ReadLine());
+            switch(choice)
+            {
+                case 1:
+                    MaximumNumber.MaxNumInt();
+                    break;
+                case 2:
+                    MaximumNumber.MaxNumFloat();
+                    break;
+                default:
+                    Console.WriteLine("Invalid Choice ");
+                    break;
+            }
             Console.ReadLine();
         }
     }
