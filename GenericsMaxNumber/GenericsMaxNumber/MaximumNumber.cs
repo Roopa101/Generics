@@ -72,6 +72,39 @@ namespace GenericsMaxNumber
         {
             Console.WriteLine("Maximum number is " + FindMaxFloat());
         }
+       
+        public static String FindMaxString()
+        {
+            Console.WriteLine("Enter the string1:");
+            String string1 = (Console.ReadLine());
+            Console.WriteLine("Enter the string2");
+            String string2 = (Console.ReadLine());
+            Console.WriteLine("Enter the string3");
+            String string3 = (Console.ReadLine());
+
+            if (string1.CompareTo(string2) > 0 && string1.CompareTo(string2) > 0)
+            {
+                return string1;
+            }
+            else if (string2.CompareTo(string1) > 0 && string2.CompareTo(string3) > 0)
+            {
+                return string2; ;
+            }
+            else if (string3.CompareTo(string1) > 0 && string3.CompareTo(string2) > 0)
+            {
+                return string3;
+            }
+            else
+            {
+                Console.WriteLine("Strings are Equal");
+
+            }
+            return default;
+        }
+        public static void MaxNumString()
+        {
+            Console.WriteLine("Maximum string is " + FindMaxString());
+        }
 
     }
 }
